@@ -1,0 +1,249 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.hero_bg {
+  background-image: url("/Images/organicBg.jpg");
+  width: 100%;
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* header start */
+header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.123);
+  backdrop-filter: blur(20px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+li,
+a {
+  font-family: "Monsterrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  height: 56px;
+  width: 56px;
+  padding: 10px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover elements */
+.nav_links li:hover {
+  border: 1px solid rgb(69, 84, 216);
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.nav_links li a:hover {
+  color: rgb(133, 133, 212);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 126, 158, 0.5);
+}
+
+/* header end */
+
+/* Hero content */
+.hero_content {
+  font-family: "Monsterrat", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.068);
+  backdrop-filter: blur(30px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 30px;
+  width: 40%;
+}
+
+.hero_content h1 {
+  font-size: 36px;
+}
+.hero_content p {
+  padding: 20px 0;
+}
+.hero_content button:hover {
+  transition: all 0.3s ease-in-out;
+  color: rgb(255, 255, 255);
+  background: rgba(23, 2, 80, 0.685);
+}
+/* Hero content end */
+
+/* Section two */
+.second_page {
+  width: 100%;
+  height: 40vh;
+  background: url(../images/organic3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Monsterrat", sans-serif;
+}
+.secondContent {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.281);
+  backdrop-filter: blur(10px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  border-radius: 50px;
+  padding: 50px;
+
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.second_page button {
+  position: absolute;
+  top: 165%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+}
+.secondContent h1 {
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.solutionsWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.solutionPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.solutionPages img {
+  width: 30%;
+}
+.solutionPages p {
+  font-size: 15px;
+  padding: 30px;
+  width: 50%;
+}
+.solutionPages h2 {
+  padding: 5px 0;
+}
+/* Section two end */
+
+.third_page {
+  background-image: url("/Images/organictwo.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
